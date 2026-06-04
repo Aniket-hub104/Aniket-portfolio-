@@ -1,32 +1,92 @@
-"use strict";
+console.log("Welcome Aniket Tamang");
 
-// Mouse Aura Following Effect
-document.addEventListener("mousemove", function (event) {
-    const aura = document.getElementById("aura");
-    if (aura) {
-        // Offset coordinates slightly to center the aura on mouse cursor
-        const xPosition = event.clientX - 200;
-        const yPosition = event.clientY - 200;
-        aura.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
-    }
+/* FLOATING PARTICLES */
+
+const particles = document.querySelector(".particles");
+
+for(let i=0;i<60;i++){
+
+const particle = document.createElement("span");
+
+particle.style.left =
+Math.random()*100 + "%";
+
+particle.style.animationDuration =
+10 + Math.random()*20 + "s";
+
+particle.style.animationDelay =
+Math.random()*10 + "s";
+
+particle.style.opacity =
+Math.random();
+
+particles.appendChild(particle);
+}
+
+/* LOADING MESSAGE */
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+alert(
+"⚔️ WELCOME ANIKET TAMANG ⚔️\n\nMYTHICAL DEVELOPER ONLINE"
+);
+
+},1000);
+
 });
 
-// Dynamic form interactions & notifications
-const contactForm = document.getElementById("contact-form");
-if (contactForm) {
-    contactForm.addEventListener("submit", function (event) {
-        event.preventDefault();
+/* EASTER EGG */
 
-        const nameField = document.getElementById("name");
-        const messageField = document.getElementById("message");
+let clicks = 0;
 
-        if (!nameField.value.trim() || !messageField.value.trim()) {
-            alert("Every warrior must provide their name and objective details!");
-            return;
-        }
+document.querySelector(".rank-badge")
+.addEventListener("click",()=>{
 
-        // Simulating submission complete
-        alert(`Message sent to the Kasugai Crow! Form successfully submitted by ${nameField.value}. 🔥`);
-        contactForm.reset();
-    });
+clicks++;
+
+if(clicks===5){
+
+alert(
+"🔥 DEVELOPER MODE ACTIVATED 🔥"
+);
+
+document.body.style.boxShadow=
+"inset 0 0 100px cyan";
+
 }
+});
+
+/* SECTION FADE IN */
+
+const sections =
+document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+
+sections.forEach(section=>{
+
+const top =
+section.getBoundingClientRect().top;
+
+if(top < window.innerHeight - 100){
+
+section.style.opacity = "1";
+section.style.transform =
+"translateY(0px)";
+}
+
+});
+});
+
+sections.forEach(section=>{
+
+section.style.opacity="0";
+section.style.transform=
+"translateY(50px)";
+
+section.style.transition=
+"all 1s ease";
+
+});
