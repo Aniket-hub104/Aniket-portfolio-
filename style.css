@@ -28,9 +28,20 @@ body::before{
     top:0;
     width:240px;
     height:100vh;
-    background:rgba(0,10,40,.85);
-    backdrop-filter:blur(12px);
-    border-right:1px solid rgba(0,200,255,.4);
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.65)
+    ),
+    url("kagura.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    backdrop-filter:blur(2px);
+    border-right:1px solid rgba(255,215,0,.3);
     padding:20px;
 }
 
