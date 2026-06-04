@@ -370,3 +370,50 @@ body::after{
     }
 
 }
+
+   .hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.cursor-glow{
+    position:fixed;
+    width:150px;
+    height:150px;
+    background:radial-gradient(
+        circle,
+        rgba(255,215,0,0.35),
+        transparent 70%
+    );
+    border-radius:50%;
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    z-index:1;
+}
+
+.particle{
+    position:fixed;
+    width:4px;
+    height:4px;
+    background:#ffd700;
+    border-radius:50%;
+    top:-10px;
+    opacity:.8;
+    pointer-events:none;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(110vh);
+    }
+}
