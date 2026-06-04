@@ -1,39 +1,84 @@
-console.log("Welcome Aniket Tamang");
-
 /* FLOATING PARTICLES */
 
-const particles = document.querySelector(".particles");
+const particles = document.querySelector('.particles');
 
-for(let i=0;i<60;i++){
+for(let i=0;i<70;i++){
 
-const particle = document.createElement("span");
+    const p = document.createElement('div');
 
-particle.style.left =
-Math.random()*100 + "%";
+    p.classList.add('particle');
 
-particle.style.animationDuration =
-10 + Math.random()*20 + "s";
+    p.style.left = Math.random()*100+'%';
 
-particle.style.animationDelay =
-Math.random()*10 + "s";
+    p.style.top = Math.random()*100+'%';
 
-particle.style.opacity =
-Math.random();
+    p.style.animation = `
+    float ${10+Math.random()*15}s linear infinite`;
 
-particles.appendChild(particle);
+    particles.appendChild(p);
 }
 
-/* LOADING MESSAGE */
+/* ADD FLOAT KEYFRAMES */
 
-window.addEventListener("load",()=>{
+const style = document.createElement('style');
+
+style.innerHTML = `
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+10%{
+opacity:1;
+}
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+`;
+
+document.head.appendChild(style);
+
+/* GLOWING RANK CARDS */
+
+const ranks = document.querySelectorAll('.rank-card');
+
+setInterval(()=>{
+
+ranks.forEach(card=>{
+
+card.style.boxShadow=
+'0 0 25px gold';
 
 setTimeout(()=>{
 
-alert(
-"⚔️ WELCOME ANIKET TAMANG ⚔️\n\nMYTHICAL DEVELOPER ONLINE"
-);
+card.style.boxShadow='none';
 
-},1000);
+},1500);
+
+});
+
+},5000);
+
+/* SMOOTH SCROLL */
+
+document.querySelectorAll('a[href^="#"]')
+.forEach(link=>{
+
+link.addEventListener('click',e=>{
+
+e.preventDefault();
+
+document.querySelector(
+link.getAttribute('href')
+).scrollIntoView({
+
+behavior:'smooth'
+
+});
+
+});
 
 });
 
@@ -41,52 +86,20 @@ alert(
 
 let clicks = 0;
 
-document.querySelector(".rank-badge")
-.addEventListener("click",()=>{
+document.querySelector('.profile-pic')
+.addEventListener('click',()=>{
 
 clicks++;
 
 if(clicks===5){
 
 alert(
-"🔥 DEVELOPER MODE ACTIVATED 🔥"
+'🔥 Developer Mode Activated 🔥'
 );
 
-document.body.style.boxShadow=
-"inset 0 0 100px cyan";
+document.body.style.filter =
+'brightness(1.1)';
 
 }
-});
-
-/* SECTION FADE IN */
-
-const sections =
-document.querySelectorAll("section");
-
-window.addEventListener("scroll",()=>{
-
-sections.forEach(section=>{
-
-const top =
-section.getBoundingClientRect().top;
-
-if(top < window.innerHeight - 100){
-
-section.style.opacity = "1";
-section.style.transform =
-"translateY(0px)";
-}
-
-});
-});
-
-sections.forEach(section=>{
-
-section.style.opacity="0";
-section.style.transform=
-"translateY(50px)";
-
-section.style.transition=
-"all 1s ease";
 
 });
