@@ -108,11 +108,11 @@ body::before{
 /* PANELS */
 .panel{
     margin-top:25px;
-    background:rgba(0,10,40,.55);
-    backdrop-filter:blur(12px);
+    background:rgba(0,0,0,.10);
+    backdrop-filter:blur(1px);
     border-radius:20px;
     padding:25px;
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(255,215,0,.25);
 }
 
 .panel h2{
