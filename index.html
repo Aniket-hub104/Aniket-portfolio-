@@ -1,143 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniket Tamang | Demon Slayer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aniket Tamang | Mythical Developer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="aura-glow" id="aura"></div>
+<div class="particles"></div>
 
-    <nav class="navbar">
-        <div class="logo">ANIKET<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About & Hobbies</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Missions</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="sidebar">
+    <h2>ANIKET</h2>
+    <p>MYTHICAL DEVELOPER</p>
 
-    <header id="hero" class="hero">
-        <div class="hero-content">
-            <h5 class="subtitle">MEMBER OF THE DEVELOPER CORPS</h5>
-            <h1 class="breathing-text">ANIKET TAMANG</h1>
-            <p class="hero-desc">Mastering the arts of code, creation, and digital breathing styles. Turning complex logic into breathtaking visuals.</p>
-            <div class="btn-group">
-                <a href="#projects" class="btn btn-primary">View Missions</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-    </header>
+    <a href="#profile">Profile</a>
+    <a href="#about">About</a>
+    <a href="#stats">Stats</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#journey">Journey</a>
+    <a href="#goals">Goals</a>
+    <a href="#contact">Contact</a>
+</div>
 
-    <main>
-        <section id="about" class="section about-section">
-            <h2 class="section-title">The Breath of Creativity</h2>
-            <p class="section-subtitle">Who I am beyond the code</p>
-            
-            <div class="about-grid">
-                <div class="about-text">
-                    <h3>Hello, I'm Aniket.</h3>
-                    <p>Just like a swordsman refining his form, I dedicate myself to mastering digital creation. I don't just write code; I construct experiences. Whether I'm building responsive web architectures or experimenting with cutting-edge tech, I bring maximum focus and intensity to everything I do.</p>
-                </div>
-                <div class="hobbies-container">
-                    <h3>Interests & Hobbies</h3>
-                    <div class="hobby-tags">
-                        <span class="tag">🎸 Playing Guitar</span>
-                        <span class="tag">🎤 Singing</span>
-                        <span class="tag">📚 Reading Books</span>
-                        <span class="tag">🎬 Watching Movies</span>
-                        <span class="tag">🤖 AI Tools & Prompting</span>
-                        <span class="tag">✨ Creative Arts</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="main">
 
-        <section id="skills" class="section skills-section">
-            <h2 class="section-title">Developer Slayer Skills</h2>
-            <p class="section-subtitle">My technical arsenal and breathing techniques</p>
-            
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">⚡</div>
-                    <h3>Frontend Mastery</h3>
-                    <p>HTML5, CSS3, Modern JavaScript, UI/UX Responsive Design, Framework Integration.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🔥</div>
-                    <h3>Backend Techniques</h3>
-                    <p>Node.js, Express, RESTful APIs, Database management, and Server optimization.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🌊</div>
-                    <h3>Creative & AI Tools</h3>
-                    <p>Advanced Prompt Engineering, Workflow Automation, Graphics Generation, UI Styling.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚔️</div>
-                    <h3>Version Control</h3>
-                    <p>Git, GitHub, deployment pipelines, clean code writing, and agile development architecture.</p>
-                </div>
-            </div>
-        </section>
+<!-- PROFILE -->
+<section id="profile">
+    <img src="profile.jpg" class="profile-pic">
 
-        <section id="projects" class="section projects-section">
-            <h2 class="section-title">Completed Missions</h2>
-            <p class="section-subtitle">A showcase of battle-tested applications</p>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-banner project-1"></div>
-                    <div class="project-info">
-                        <h3>Project: Total Concentration</h3>
-                        <p>A high-performance web application optimizing user workflows using strict Javascript and dynamic state management.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner project-2"></div>
-                    <div class="project-info">
-                        <h3>Project: Hinokami Interface</h3>
-                        <p>An immersive e-commerce portal utilizing striking animations, custom UI components, and lightning-fast loading speeds.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-banner project-3"></div>
-                    <div class="project-info">
-                        <h3>Project: The AI Nichirin</h3>
-                        <p>A web tool integrated with automated pipelines to assist creators in content formatting, prompt generation, and visual layout rendering.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="rank-badge">
+        🏆 MYTHICAL DEVELOPER
+    </div>
 
-        <section id="contact" class="section contact-section">
-            <h2 class="section-title">Send a Crow</h2>
-            <p class="section-subtitle">Let's forge something legendary together</p>
-            
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" value="bunnytamang635@gmail.com" readonly required>
-                    <small>Direct Line</small>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" placeholder="State your mission objective..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Cast Breathing Form</button>
-            </form>
-        </section>
-    </main>
+    <h1>Aniket Tamang</h1>
 
-    <footer>
-        <p>&copy; 2026 Aniket Tamang. All Rights Reserved. Crafted with Total Concentration. 🔥⚔️</p>
-    </footer>
+    <p>
+        Full Stack Developer • Gamer • Creator • Problem Solver
+    </p>
+</section>
 
-    <script src="script.js"></script>
+<!-- ABOUT -->
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I'm Aniket Tamang, a passionate learner and creative thinker.
+I enjoy transforming ideas into digital experiences through code,
+design, and innovation.
+
+Whether it's building websites, exploring technology,
+playing guitar, singing, watching anime,
+editing photos and videos, or reading books,
+I always enjoy learning something new.
+
+I believe that consistency, creativity,
+and curiosity are the keys to growth.
+</p>
+
+</section>
+
+<!-- PLAYER STATS -->
+<section id="stats">
+
+<h2>Player Stats</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Projects</h3>
+<p>10+</p>
+</div>
+
+<div class="card">
+<h3>Skills Learned</h3>
+<p>20+</p>
+</div>
+
+<div class="card">
+<h3>Problem Solving</h3>
+<p>95%</p>
+</div>
+
+<div class="card">
+<h3>Creativity</h3>
+<p>98%</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+
+<h2>Hero Skills</h2>
+
+<div class="cards">
+
+<div class="card">HTML5</div>
+<div class="card">CSS3</div>
+<div class="card">JavaScript</div>
+<div class="card">Python</div>
+<div class="card">GitHub</div>
+<div class="card">Responsive Design</div>
+<div class="card">UI Design</div>
+<div class="card">Video Editing</div>
+<div class="card">Photo Editing</div>
+<div class="card">Animation</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+<h2>Battle History</h2>
+
+<div class="project">
+
+<h3>🏆 Victory #1</h3>
+
+<h4>Self Portfolio Website</h4>
+
+<p>
+A Mobile Legends inspired personal portfolio website
+built to showcase my skills, hobbies,
+projects, achievements, and creativity.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>🏆 Victory #2</h3>
+
+<h4>Future Project Loading...</h4>
+
+<p>
+New projects are under development.
+This section will grow with time.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>🏆 Victory #3</h3>
+
+<h4>Creative Experiments</h4>
+
+<p>
+Design concepts, UI ideas,
+animations, and coding experiments.
+</p>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+
+<h2>Achievements</h2>
+
+<div class="cards">
+
+<div class="card">🥇 Fast Learner</div>
+<div class="card">🥇 Self-Taught Developer</div>
+<div class="card">🥇 Creative Thinker</div>
+<div class="card">🥇 Team Player</div>
+<div class="card">🥇 Consistent Learner</div>
+<div class="card">🥇 Problem Solver</div>
+
+</div>
+
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies">
+
+<h2>Interests & Hobbies</h2>
+
+<div class="cards">
+
+<div class="card">🎸 Guitar</div>
+<div class="card">🎤 Singing</div>
+<div class="card">💻 Coding</div>
+<div class="card">📚 Reading</div>
+<div class="card">🎌 Anime</div>
+<div class="card">🎬 Editing</div>
+<div class="card">📷 Photography</div>
+<div class="card">🎮 Gaming</div>
+
+</div>
+
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+
+<h2>Developer Journey</h2>
+
+<div class="project">
+2022 → Started learning coding
+</div>
+
+<div class="project">
+2023 → Learned HTML, CSS, JavaScript
+</div>
+
+<div class="project">
+2024 → Built first portfolio
+</div>
+
+<div class="project">
+2025 → Exploring Full Stack Development
+</div>
+
+<div class="project">
+Future → Professional Software Developer
+</div>
+
+</section>
+
+<!-- GOALS -->
+<section id="goals">
+
+<h2>Future Goals</h2>
+
+<ul>
+
+<li>✔ Build Awesome Projects</li>
+
+<li>✔ Learn Advanced Web Development</li>
+
+<li>✔ Contribute to Open Source</li>
+
+<li>✔ Learn Artificial Intelligence</li>
+
+<li>✔ Become Professional Software Engineer</li>
+
+<li>✔ Create Products That Help People</li>
+
+</ul>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email : your-email@example.com</p>
+
+<p>GitHub : github.com/yourusername</p>
+
+<p>
+Thank you for visiting my portfolio.
+The journey has only just begun.
+</p>
+
+</section>
+
+<footer>
+
+<h3>
+⚔️ ANIKET TAMANG | MYTHICAL DEVELOPER ⚔️
+</h3>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
